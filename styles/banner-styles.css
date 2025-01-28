@@ -1,0 +1,74 @@
+
+.banner-section,
+.banner-div {
+    display: flex;
+}
+
+
+.banner-section {
+    justify-content: center;
+}
+
+.banner-div {
+    width: 100%;
+    max-width: 1020px;
+    padding: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+}
+
+.banner-title {
+    color: var(--Black, #111);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.first-word {
+    color: var(--Orange);
+    display: block;
+}
+
+.last-part {
+    color: var(--Sky-blue);
+}
+
+.banner-description {
+    color: var(--Black, #111);
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.banner-div img {
+    width: 40%;
+}
+
+.banner-section button {
+    border-radius: 10px;
+    background: var(--Black, #111);
+    width: 173px;
+    padding: 9px;
+}
+
+.banner-section button a {
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+@media screen and (max-width: 576px) {
+    .banner-div {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0;
+    }
+
+    .banner-div img {
+        width: 100%;
+    }
+}
