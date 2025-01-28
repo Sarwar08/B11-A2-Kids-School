@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 700 */
+
+/* .quicksand-<uniquifier> {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+
+:root {
+    --Black: #111;
+    --Orange: #FEA301;
+    --Sky-blue: #01ACFD;
+    --Mint-green: #05D4DF;
+    --Blue: #5D58EF;
+}
+
+body {
+    font-family: "Quicksand", serif;
+}
+
+.navbar-section, 
+nav, 
+.site-name-section,
+nav ul{
+    display: flex;
+}
+
+.navbar-section {
+    justify-content: center;
+}
+
+nav {
+    width: 1020px;
+    height: 62px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* site-name-section styles */
+.site-name-section {
+    justify-content: center;
+    align-items: center;
+}
+
+.site-name-section img{
+    width: 62px;
+    height: 62px;
+}
+
+.site-name {
+    color: var(--Black);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* menu styles */
+
+nav ul {
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 28px;
+}
+
+.home a, .about a, .facilities a, .admission a, .btn-contact a {
+    font-family: "Quicksand";
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.home a{
+    color: var(--Orange);
+    font-weight: 700;
+}
+
+.about a{
+    color: var(--Sky-Blue,#01ACFD);
+    font-weight: 500;
+}
+
+.facilities a{
+    color: var(--Mint-green);
+    font-weight: 500;
+}
+
+.admission a{
+    color: var(--Blue);
+    font-weight: 500;
+}
+
+/* btn-contact styles */
+
+.btn-contact {
+    border-radius: 11px;
+    background: var(--Orange, #FEA301);
+    border: none;
+    padding: 10px;
+    width: 197px;
+}
+
+.btn-contact a {
+    color: #FFF;
+    font-weight: 600;
+}
