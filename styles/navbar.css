@@ -27,7 +27,8 @@ body {
 .navbar-section, 
 nav, 
 .site-name-section,
-nav ul{
+nav ul,
+.ul-and-contact-div {
     display: flex;
 }
 
@@ -36,7 +37,8 @@ nav ul{
 }
 
 nav {
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     height: 62px;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +66,10 @@ nav {
 }
 
 /* menu styles */
+
+.ul-and-contact-div {
+    justify-content: space-between;
+}
 
 nav ul {
 
@@ -113,4 +119,43 @@ nav ul li {
 .btn-contact a {
     color: #FFF;
     font-weight: 600;
+}
+
+/* hamburger-styles */
+
+.hamburger-section {
+
+}
+
+.hamburger-btn {
+    border: none;
+    background-color: white;
+    color: #111;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width: 576px) {
+
+    body{
+        margin: 0;
+    }
+
+    .navbar-section {
+        border-bottom: 0.5px solid var(--Orange);
+    }
+
+    nav img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .site-name, nav ul, .btn-contact-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .hamburger-section {
+        display: none;
+    }
 }
