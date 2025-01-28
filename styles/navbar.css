@@ -57,9 +57,10 @@ nav {
 .site-name {
     color: var(--Black);
     font-family: Quicksand;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 26px;
+    margin-left: 9px;
 }
 
 /* menu styles */
