@@ -18,7 +18,6 @@
     font-size: 2.53rem;
     font-weight: 700;
     line-height: 3rem;
-    
 }
 
 .cards {
@@ -114,6 +113,11 @@
     .cards {
         flex-direction: column;
         margin: 10px;
+        padding: 0 1.25rem;
+    }
+
+    .cur-title {
+        font-size: 1.75rem;
     }
 
     .nav-buttons {
